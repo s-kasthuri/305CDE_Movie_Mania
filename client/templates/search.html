@@ -1,0 +1,31 @@
+<div class="container" ng-app="myApp" ng-controller="searchController" ng-cloak> 
+  
+<!-- fixed container -->
+
+<!-- the debounce option refreshes the search every 800ms which is great -->
+<input id="search" ng-model="search" ng-model-options="{ debounce: 800 }" placeholder="Search For A Movie" />
+
+
+
+
+    <!-- movie and poster split screen -->
+    <div class="row">
+        <div class="col-md-6 poster"> 
+            <h1 id="title">{{title}}</h1>
+            <img class="animated flip" ng-src="{{poster}}" />
+        </div>
+
+        <div class="col-md-6 animated zoomInRight plot"> 
+            <p class="overview">{{overview}}</p>
+            <p class="rating">{{rating}}</p>
+            <p class="overview">{{release}}</p>
+            <p class="overview">{{status}}</p>
+        </div> 
+        
+    </div> 
+    <!-- end movie poster split screen -->
+
+</div>
+<!-- end of container -->
+
+

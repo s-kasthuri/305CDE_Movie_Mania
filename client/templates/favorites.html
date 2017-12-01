@@ -1,0 +1,12 @@
+<h1>Favourites Page</h1>
+<p>{{ message }}</p>
+
+
+<table>
+  <tr ng-repeat="book in books">
+    <td>{{book.id}}</td>
+    <td>{{book.title}}</td>
+    <td><a  ng-click="delete(book)" href="">remove</a></td>
+  </tr>
+  <button ng-click="deleteAll()">Clear Fav</button>
+</table>
